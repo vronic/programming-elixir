@@ -9,7 +9,7 @@ defmodule Issues.CLI do
   """
   def run(argv) do 
     argv
-      |> parse_args
+    |> parse_args
     |> process  
   end
 
@@ -41,4 +41,5 @@ defmodule Issues.CLI do
   def process({user, project, _count}) do 
     Issues.GithubIssues.fetch(user, project)
   end
+
 end

@@ -13,3 +13,12 @@ Book [Programming Elixir. Functional |> Concurrent |> Pragmatic |> Fun](https://
 ##### Transformation: Parse the Command Line
 ##### Step: Write Some Basic Tests
 ##### Transformation: Fetch from GitHub
+##### Task: Use External Libraries
+###### Finding a Library
+- [Elixir documentation](http://elixir-lang.org/docs/)
+- [standard Erlang libraries - Application Groups](http://erlang.org/doc/)
+- [the Elixir/Erlang Package Manager](http://hex.pm)
+- Google and GitHub are your friends
+
+###### Adding a Library to Your Project
+###### Back to the Transformation
