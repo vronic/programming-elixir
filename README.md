@@ -27,3 +27,5 @@ Book [Programming Elixir. Functional |> Concurrent |> Pragmatic |> Fun](https://
 ##### Application Configuration
 
 #### Transformation: Sort Data
+
+#### Transformation: Take First n Items
