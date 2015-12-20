@@ -29,3 +29,4 @@ Book [Programming Elixir. Functional |> Concurrent |> Pragmatic |> Fun](https://
 #### Transformation: Sort Data
 
 #### Transformation: Take First n Items
+#### Transformation: Format the Table
