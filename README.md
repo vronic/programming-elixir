@@ -30,3 +30,5 @@ Book [Programming Elixir. Functional |> Concurrent |> Pragmatic |> Fun](https://
 
 #### Transformation: Take First n Items
 #### Transformation: Format the Table
+
+#### Task: Make a Command-Line Executable
