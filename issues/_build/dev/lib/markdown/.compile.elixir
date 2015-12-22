@@ -1,0 +1,7 @@
+v1.
+{<<"/Users/pikov/IdeaProjects/programming-elixir/issues/_build/dev/lib/markdown/ebin/Elixir.Markdown.beam">>,
+ 'Elixir.Markdown',<<"lib/markdown.ex">>,
+ ['Elixir.Access','Elixir.String','Elixir.Kernel.Typespec','Elixir.Kernel',
+  'Elixir.Keyword','Elixir.Mix.Project','Elixir.Module'],
+ [erlang,filename,code],
+ [],nil}.

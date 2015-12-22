@@ -1,0 +1,24 @@
+v1.
+{<<"_build/dev/lib/issues/ebin/Elixir.Issues.beam">>,'Elixir.Issues',
+ <<"lib/issues.ex">>,
+ ['Elixir.Kernel'],
+ [],[],nil}.
+{<<"_build/dev/lib/issues/ebin/Elixir.Issues.GithubIssues.beam">>,
+ 'Elixir.Issues.GithubIssues',<<"lib/issues/github_issue.ex">>,
+ ['Elixir.Kernel','Elixir.Logger','Elixir.Application','Elixir.Module'],
+ [erlang,'Elixir.HTTPoison','Elixir.String.Chars','Elixir.Poison'],
+ [],nil}.
+{<<"_build/dev/lib/issues/ebin/Elixir.Issues.TableFormatter.beam">>,
+ 'Elixir.Issues.TableFormatter',<<"lib/issues/table_formatter.ex">>,
+ ['Elixir.Kernel','Elixir.Enum','Elixir.Module'],
+ [erlang,'Elixir.Access','Elixir.String.Chars','Elixir.String','Elixir.IO',
+  'Elixir.List',io,'Elixir.Tuple'],
+ [],nil}.
+{<<"_build/dev/lib/issues/ebin/Elixir.Issues.CLI.beam">>,'Elixir.Issues.CLI',
+ <<"lib/issues/cli.ex">>,
+ ['Elixir.Kernel','Elixir.Logger','Elixir.Issues.TableFormatter',
+  'Elixir.Module'],
+ [erlang,'Elixir.Access','Elixir.String.Chars','Elixir.String',
+  'Elixir.OptionParser','Elixir.IO','Elixir.System',
+  'Elixir.Issues.GithubIssues','Elixir.HashDict','Elixir.Enum'],
+ [],nil}.
