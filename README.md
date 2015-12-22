@@ -32,3 +32,5 @@ Book [Programming Elixir. Functional |> Concurrent |> Pragmatic |> Fun](https://
 #### Transformation: Format the Table
 
 #### Task: Make a Command-Line Executable
+
+#### Task: Add Some Logging
