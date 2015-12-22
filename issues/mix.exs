@@ -3,12 +3,14 @@ defmodule Issues.Mixfile do
 
   def project do
     [app: :issues,
-     version: "0.0.1",
-     elixir: "~> 1.1",
-     build_embedded: Mix.env == :prod,
-     start_permanent: Mix.env == :prod,
-     escript: escript_config,
-     deps: deps]
+    version: "0.0.1",
+    elixir: "~> 1.1",
+    build_embedded: Mix.env == :prod,
+    start_permanent: Mix.env == :prod,
+    escript: escript_config,
+    name: "Issues",
+    source_url: "https://github.com/vronic/programming-elixir",
+    deps: deps]
   end
 
   # Configuration for the OTP application
@@ -30,7 +32,9 @@ defmodule Issues.Mixfile do
   defp deps do
     [
       { :httpoison, "~> 0.4" },
-      { :poison, "~> 1.5"}
+      { :poison, "~> 1.5"},
+      { :ex_doc, github: "elixir-lang/ex_doc" },
+      {:earmark, ">= 0.0.0"}
     ]
   end
 
