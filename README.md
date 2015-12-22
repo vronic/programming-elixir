@@ -34,3 +34,6 @@ Book [Programming Elixir. Functional |> Concurrent |> Pragmatic |> Fun](https://
 #### Task: Make a Command-Line Executable
 
 #### Task: Add Some Logging
+
+#### Task: Test the Comments
+
