@@ -92,7 +92,7 @@
   </div>
   
     <div class="summary-synopsis"><p>Return a format string that hard codes the widths of a set of columns.
-We put <code class="inline">&quot; | &quot;</code> between each column</p>
+We put <code>&quot; | &quot;</code> between each column</p>
 </div>
   
 </div>
@@ -146,7 +146,7 @@ It is a string of hyphens, with + signs where the vertical bar between the colum
   </div>
   
     <div class="summary-synopsis"><p>Given a list of rows, where each row contains a keyed list of columns, return a list
-containing lists of the data in each column. The <code class="inline">headers</code> parameter contains the
+containing lists of the data in each column. The <code>headers</code> parameter contains the
 list of columns to extract</p>
 </div>
   
@@ -197,11 +197,12 @@ return a list containing the maximum width of each column</p>
   
   <section class="docstring">
     <p>Return a format string that hard codes the widths of a set of columns.
-We put <code class="inline">&quot; | &quot;</code> between each column.</p>
-<p>  ## Example</p>
-<pre><code class="iex elixir">iex&gt; widths = [5,6,99]
-iex&gt; Issues.TableFormatter.format_for(widths)
-&quot;~-5s | ~-6s | ~-99s~n&quot;</code></pre>
+We put <code>&quot; | &quot;</code> between each column.</p>
+
+<p>## Example
+    iex&gt; widths = [5,6,99]
+    iex&gt; Issues.TableFormatter.format_for(widths)
+    &quot;~-5s | ~-6s | ~-99s~n&quot;</p>
 
   </section>
 </div>
@@ -220,9 +221,12 @@ iex&gt; Issues.TableFormatter.format_for(widths)
   
   <section class="docstring">
     <p>Takes a list of row data, where each row is a HashDict, and a list of headers.</p>
+
 <p>Prints a table to STDOUT of the data from each row identified by each header.</p>
+
 <p>That is, each header identifies a column, and those columns are extracted and
 printed from the rows.</p>
+
 <p>We calculate the width of each column to fit the longest element in that column.</p>
 
   </section>
@@ -242,11 +246,12 @@ printed from the rows.</p>
   
   <section class="docstring">
     <p>Return a binary (string) version of our parameter.</p>
-<p>  ## Examples</p>
-<pre><code class="iex elixir">iex&gt; Issues.TableFormatter.printable(&quot;a&quot;)
-&quot;a&quot;
-iex&gt; Issues.TableFormatter.printable(99)
-&quot;99&quot;</code></pre>
+
+<p>## Examples
+    iex&gt; Issues.TableFormatter.printable(&quot;a&quot;)
+    &quot;a&quot;
+    iex&gt; Issues.TableFormatter.printable(99)
+    &quot;99&quot;</p>
 
   </section>
 </div>
@@ -302,10 +307,11 @@ and a format string, write the extracted data under control of the format string
   <section class="docstring">
     <p>Generate the line that goes below the column headings.
 It is a string of hyphens, with + signs where the vertical bar between the columns goes.</p>
-<p>  ## Example</p>
-<pre><code class="iex elixir">iex&gt; widths = [5,6,9]
-iex&gt; Issues.TableFormatter.separator(widths)
-&quot;------+--------+----------&quot;</code></pre>
+
+<p>## Example
+    iex&gt; widths = [5,6,9]
+    iex&gt; Issues.TableFormatter.separator(widths)
+    &quot;------+--------+----------&quot;</p>
 
   </section>
 </div>
@@ -324,13 +330,14 @@ iex&gt; Issues.TableFormatter.separator(widths)
   
   <section class="docstring">
     <p>Given a list of rows, where each row contains a keyed list of columns, return a list
-containing lists of the data in each column. The <code class="inline">headers</code> parameter contains the
+containing lists of the data in each column. The <code>headers</code> parameter contains the
 list of columns to extract</p>
-<p>  ## Example</p>
-<pre><code class="iex elixir">iex&gt; list = [Enum.into([{&quot;a&quot;, &quot;1&quot;},{&quot;b&quot;, &quot;2&quot;},{&quot;c&quot;, &quot;3&quot;}], HashDict.new),
-...&gt;         Enum.into([{&quot;a&quot;, &quot;4&quot;},{&quot;b&quot;, &quot;5&quot;},{&quot;c&quot;, &quot;6&quot;}], HashDict.new)]
-iex&gt; Issues.TableFormatter.split_into_columns(list, [ &quot;a&quot;, &quot;b&quot;, &quot;c&quot; ])
-[ [&quot;1&quot;, &quot;4&quot;], [&quot;2&quot;, &quot;5&quot;], [&quot;3&quot;, &quot;6&quot;] ]</code></pre>
+
+<p>## Example
+    iex&gt; list = [Enum.into([{&quot;a&quot;, &quot;1&quot;},{&quot;b&quot;, &quot;2&quot;},{&quot;c&quot;, &quot;3&quot;}], HashDict.new),
+    ...&gt;         Enum.into([{&quot;a&quot;, &quot;4&quot;},{&quot;b&quot;, &quot;5&quot;},{&quot;c&quot;, &quot;6&quot;}], HashDict.new)]
+    iex&gt; Issues.TableFormatter.split<em>into</em>columns(list, [ &quot;a&quot;, &quot;b&quot;, &quot;c&quot; ])
+    [ [&quot;1&quot;, &quot;4&quot;], [&quot;2&quot;, &quot;5&quot;], [&quot;3&quot;, &quot;6&quot;] ]</p>
 
   </section>
 </div>
@@ -350,10 +357,11 @@ iex&gt; Issues.TableFormatter.split_into_columns(list, [ &quot;a&quot;, &quot;b&
   <section class="docstring">
     <p>Given a list containing sublists, where each sublist contains the data for a column,
 return a list containing the maximum width of each column</p>
-<p>  ## Example</p>
-<pre><code class="iex elixir">iex&gt; data = [ [ &quot;cat&quot;, &quot;wombat&quot;, &quot;elk&quot;], [&quot;mongoose&quot;, &quot;ant&quot;, &quot;gnu&quot;]]
-iex&gt; Issues.TableFormatter.widths_of(data)
-[ 6, 8 ]</code></pre>
+
+<p>## Example
+    iex&gt; data = [ [ &quot;cat&quot;, &quot;wombat&quot;, &quot;elk&quot;], [&quot;mongoose&quot;, &quot;ant&quot;, &quot;gnu&quot;]]
+    iex&gt; Issues.TableFormatter.widths_of(data)
+    [ 6, 8 ]</p>
 
   </section>
 </div>
