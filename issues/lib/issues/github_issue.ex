@@ -13,10 +13,10 @@ defmodule Issues.GithubIssues do
   end
   
   def handle_response(%{status_code: 200, body: body}) do
-    { :ok, Poison.decode(body) }
+    { :ok, Poison.decode!(body) }
   end
 
   def handle_response(%{status_code: ___, body: body}) do
-    { :error, Poison.decode(body) }
+    { :error, Poison.decode!(body) }
   end
 end

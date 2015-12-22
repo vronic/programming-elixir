@@ -15,12 +15,6 @@ defmodule Issues.CLI do
     |> process
   end
 
-  def run(argv) do 
-    argv
-    |> parse_args
-    |> process  
-  end
-
   @doc """
   `argv` can be -h or --help, which returns :help.
 
