@@ -2,7 +2,8 @@
 # Programming Elixir
 Book [Programming Elixir. Functional |> Concurrent |> Pragmatic |> Fun](https://pragprog.com/book/elixir/programming-elixir)
 
-## Part I. Chapter 13. Organizing a Project
+# Part I. Conventional Programming
+## Chapter 13. Organizing a Project
 
 ### The Project: Fetch Issues from GitHub
 
@@ -38,3 +39,9 @@ Book [Programming Elixir. Functional |> Concurrent |> Pragmatic |> Fun](https://
 #### Task: Test the Comments
 
 #### Task: Create Project Documentation
+
+# Part II. Concurrent Programming
+## Chapter 14. Working with Multiple Processes
+
+### A Simple Process
+
