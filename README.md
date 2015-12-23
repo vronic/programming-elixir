@@ -48,7 +48,5 @@ Book [Programming Elixir. Functional |> Concurrent |> Pragmatic |> Fun](https://
 #### Handling Multiple Messages
 #### Recursion, Looping, and the Stack
 
-### Process Overhead
-
-
-
+#### Process Overhead
+#### When Processes Die
