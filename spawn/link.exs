@@ -8,7 +8,7 @@ defmodule Link do
 
   def run do
     Process.flag(:trap_exit, true)
-    spawn(Link, :sad_function, [])
+    spawn_link(Link, :sad_function, [])
 
     receive do
       msg ->
