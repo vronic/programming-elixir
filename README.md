@@ -51,4 +51,5 @@ Book [Programming Elixir. Functional |> Concurrent |> Pragmatic |> Fun](https://
 #### Process Overhead
 #### When Processes Die
 #### Linking Two Processes
+#### Monitoring a Process
 
