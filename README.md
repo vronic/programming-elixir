@@ -46,4 +46,9 @@ Book [Programming Elixir. Functional |> Concurrent |> Pragmatic |> Fun](https://
 ### A Simple Process
 #### Sending Messages Between Processes
 #### Handling Multiple Messages
+#### Recursion, Looping, and the Stack
+
+### Process Overhead
+
+
 
